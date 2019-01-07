@@ -13,8 +13,8 @@ scripted_gui = {
 		effects = {
 			aggressive_expansion_bg_click = {
 				set_temp_variable = { show = 1 }
-				subtract_from_temp_variable = { show = show_aggressive_expansion_list }
-				set_variable = { show_aggressive_expansion_list = show }
+				subtract_from_temp_variable = { show = show_aggressive_expansion_list_window }
+				set_variable = { show_aggressive_expansion_list_window = show }
 			}
 		}
 		
@@ -22,6 +22,248 @@ scripted_gui = {
 		}
 
 		ai_weights = {
+		}
+	}
+
+	aggressive_expansion_view_window = {
+		context_type = selected_country_context
+		
+		window_name = "aggressive_expansion_view_window"
+		parent_window_token = selected_country_view_info
+		
+		visible = {
+			ROOT = { is_ai = no }
+		}
+	}
+
+	aggressive_expansion_list_window = {
+		context_type = player_context
+		
+		window_name = "aggressive_expansion_list_window"
+		
+		visible = {
+			check_variable = { show_aggressive_expansion_list_window > 0 }
+		}
+		
+		effects = {
+			aggerssive_expansion_list_exit_click = {
+				set_variable = { show_aggressive_expansion_list_window = 0 }
+			}
+			aggerssive_expansion_list_refresh_click = {
+				aggressive_expansion_list_refresh = yes
+			}
+		}
+		
+		triggers = {
+			no_aggressive_expansion_list_entries_visible = {
+				NOT = {
+					any_country = {
+						OR = {
+							has_country_flag = aggressive_expansion_list_country_1
+						}
+					}
+				}
+			}
+			aggressive_expansion_list_country_1_bg_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_1
+				}
+			}
+			aggressive_expansion_list_country_1_entry_name_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_1
+				}
+			}
+			aggressive_expansion_list_country_1_entry_level_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_1
+				}
+			}
+			aggressive_expansion_list_country_1_entry_icon_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_1
+				}
+			}
+			aggressive_expansion_list_country_2_bg_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_2
+				}
+			}
+			aggressive_expansion_list_country_2_entry_name_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_2
+				}
+			}
+			aggressive_expansion_list_country_2_entry_level_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_2
+				}
+			}
+			aggressive_expansion_list_country_2_entry_icon_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_2
+				}
+			}
+			aggressive_expansion_list_country_3_bg_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_3
+				}
+			}
+			aggressive_expansion_list_country_3_entry_name_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_3
+				}
+			}
+			aggressive_expansion_list_country_3_entry_level_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_3
+				}
+			}
+			aggressive_expansion_list_country_3_entry_icon_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_3
+				}
+			}
+			aggressive_expansion_list_country_4_bg_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_4
+				}
+			}
+			aggressive_expansion_list_country_4_entry_name_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_4
+				}
+			}
+			aggressive_expansion_list_country_4_entry_level_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_4
+				}
+			}
+			aggressive_expansion_list_country_4_entry_icon_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_4
+				}
+			}
+			aggressive_expansion_list_country_5_bg_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_5
+				}
+			}
+			aggressive_expansion_list_country_5_entry_name_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_5
+				}
+			}
+			aggressive_expansion_list_country_5_entry_level_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_5
+				}
+			}
+			aggressive_expansion_list_country_5_entry_icon_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_5
+				}
+			}
+			aggressive_expansion_list_country_6_bg_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_6
+				}
+			}
+			aggressive_expansion_list_country_6_entry_name_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_6
+				}
+			}
+			aggressive_expansion_list_country_6_entry_level_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_6
+				}
+			}
+			aggressive_expansion_list_country_6_entry_icon_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_6
+				}
+			}
+			aggressive_expansion_list_country_7_bg_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_7
+				}
+			}
+			aggressive_expansion_list_country_7_entry_name_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_7
+				}
+			}
+			aggressive_expansion_list_country_7_entry_level_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_7
+				}
+			}
+			aggressive_expansion_list_country_7_entry_icon_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_7
+				}
+			}
+			aggressive_expansion_list_country_8_bg_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_8
+				}
+			}
+			aggressive_expansion_list_country_8_entry_name_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_8
+				}
+			}
+			aggressive_expansion_list_country_8_entry_level_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_8
+				}
+			}
+			aggressive_expansion_list_country_8_entry_icon_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_8
+				}
+			}
+			aggressive_expansion_list_country_9_bg_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_9
+				}
+			}
+			aggressive_expansion_list_country_9_entry_name_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_9
+				}
+			}
+			aggressive_expansion_list_country_9_entry_level_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_9
+				}
+			}
+			aggressive_expansion_list_country_9_entry_icon_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_9
+				}
+			}
+			aggressive_expansion_list_country_10_bg_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_10
+				}
+			}
+			aggressive_expansion_list_country_10_entry_name_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_10
+				}
+			}
+			aggressive_expansion_list_country_10_entry_level_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_10
+				}
+			}
+			aggressive_expansion_list_country_10_entry_icon_visible = {
+				any_country = {
+					has_country_flag = aggressive_expansion_list_country_10
+				}
+			}
 		}
 	}
 }

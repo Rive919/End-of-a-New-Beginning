@@ -134,7 +134,6 @@ guiTypes = {
 				spriteType = "GFX_relation_wargoal"
 				position = { x = 380 y = 10 }
 				scale = 1
-				pdx_tooltip = "GENERATED_aggressive_expansion_ICON_TT"
 			}
 			
 			instantTextboxType = {
@@ -177,10 +176,5 @@ guiTypes = {
 			buttonText = "AGGRESSIVE_EXPANSION_LIST_REFRESH"
 			pdx_tooltip = "AGGRESSIVE_EXPANSION_LIST_REFRESH"
 			clicksound = click_close
-		}
-
-		properties = {
-			threat_country_1_flag = {
-				image = [global.league_of_nations_threat_country_1.GetLeagueOfNationsThreatListFlagIcon1]
 		}
 }

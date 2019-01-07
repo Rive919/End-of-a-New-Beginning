@@ -22,7 +22,10 @@ USA_grant_statehood = {
 
 		complete_effect = {
 		383 = { add_core_of = USA }
-		1052 = { add_core_of = USA }
+		1052 = {
+			remove_claim_by = USA
+			add_core_of = USA
+			}
 		}
 
 		ai_will_do = {
@@ -52,6 +55,13 @@ USA_grant_statehood = {
 
 		complete_effect = {
 		376 = { add_core_of = USA }
+		1300 = { add_core_of = USA }
+		1279 = { add_core_of = USA }
+		1295 = { add_core_of = USA }
+		1301 = { add_core_of = USA }
+		1288 = { add_core_of = USA }
+		1302 = { add_core_of = USA }
+		1278 = { add_core_of = USA }
 		}
 
 		ai_will_do = {
@@ -81,6 +91,10 @@ USA_grant_statehood = {
 
 		complete_effect = {
 		377 = { add_core_of = USA }
+		1294 = { add_core_of = USA }
+		1297 = { add_core_of = USA }
+		1286 = { add_core_of = USA }
+		1287 = { add_core_of = USA }
 		}
 
 		ai_will_do = {
@@ -96,7 +110,6 @@ USA_grant_statehood = {
 		available = {
 			USA = { controls_state = 379 }
 			379 = { state_population > 40000 }
-			has_country_flag = USAUtah_War_Over
 		}
 
 		visible = {
@@ -111,7 +124,10 @@ USA_grant_statehood = {
 
 		complete_effect = {
 		379 = { add_core_of = USA }
-		1093 = { add_core_of = USA }
+		1093 = {
+			remove_claim_by = USA
+			add_core_of = USA
+			}
 		}
 
 		ai_will_do = {
@@ -127,7 +143,6 @@ USA_grant_statehood = {
 		available = {
 			USA = { controls_state = 380 }
 			380 = { state_population > 40000 }
-			has_country_flag = USAUtah_War_Over
 		}
 
 		visible = {
@@ -141,7 +156,10 @@ USA_grant_statehood = {
 		cost = 50
 
 		complete_effect = {
-		380 = { add_core_of = USA }
+		380 = {
+			remove_claim_by = USA
+			add_core_of = USA
+		}
 		}
 
 		ai_will_do = {
@@ -171,8 +189,16 @@ USA_grant_statehood = {
 
 		complete_effect = {
 		381 = { add_core_of = USA }
-		1049 = { add_core_of = USA }
-		1947 = { add_core_of = USA }
+		1049 = {
+			add_core_of = USA
+			remove_claim_by = USA
+		}
+		1047 = {
+			remove_claim_by = USA
+			add_core_of = USA
+		}
+		1291 = { add_core_of = USA }
+		1299 = { add_core_of = USA }
 		}
 
 		ai_will_do = {
@@ -218,8 +244,13 @@ USA_grant_statehood = {
 
 		complete_effect = {
 		382 = { add_core_of = USA }
-		1051 = { add_core_of = USA }
+		1051 = {
+			remove_claim_by = USA
+			add_core_of = USA
+		}
 		1092 = { add_core_of = USA }
+		1298 = { add_core_of = USA }
+		1292 = { add_core_of = USA }
 		}
 
 		ai_will_do = {
@@ -249,8 +280,14 @@ USA_grant_statehood = {
 
 		complete_effect = {
 		384 = { add_core_of = USA }
-		1046 = { add_core_of = USA }
-		1050 = { add_core_of = USA }
+		1046 = {
+			remove_claim_by = USA
+			add_core_of = USA
+		}
+		1050 = {
+			remove_claim_by = USA
+			add_core_of = USA
+		}
 		}
 
 		ai_will_do = {
@@ -280,7 +317,11 @@ USA_grant_statehood = {
 
 		complete_effect = {
 			385 = { add_core_of = USA }
-			1075 = { add_core_of = USA }
+			1075 = {
+				remove_claim_by = USA
+				add_core_of = USA
+			}
+			1289 = { add_core_of = USA }
 		}
 
 		ai_will_do = {
@@ -310,7 +351,10 @@ USA_grant_statehood = {
 
 		complete_effect = {
 			386 = { add_core_of = USA }
-			3851073 = { add_core_of = USA }
+			1073 = {
+				remove_claim_by = USA
+				add_core_of = USA
+			}
 		}
 
 		ai_will_do = {
@@ -340,8 +384,14 @@ USA_grant_statehood = {
 
 		complete_effect = {
 			387 = { add_core_of = USA }
-			1074 = { add_core_of = USA }
-			1076 = { add_core_of = USA }
+			1074 = {
+				remove_claim_by = USA
+				add_core_of = USA
+			}
+			1076 = {
+				remove_claim_by = USA
+				add_core_of = USA
+			}
 		}
 
 		ai_will_do = {
@@ -371,7 +421,12 @@ USA_grant_statehood = {
 
 		complete_effect = {
 		388 = { add_core_of = USA }
-		1048 = { add_core_of = USA }
+		1048 = {
+			remove_claim_by = USA
+			add_core_of = USA
+		}
+		1282 = { add_core_of = USA }
+		1292 = { add_core_of = USA }
 		}
 
 		ai_will_do = {
@@ -401,6 +456,7 @@ USA_grant_statehood = {
 
 		complete_effect = {
 		389 = { add_core_of = USA }
+		1290 = { add_core_of = USA }
 		}
 
 		ai_will_do = {
@@ -430,7 +486,10 @@ USA_grant_statehood = {
 
 		complete_effect = {
 		390 = { add_core_of = USA }
-		1045 = { add_core_of = USA }
+		1045 = {
+			remove_claim_by = USA
+			add_core_of = USA
+			}
 		}
 
 		ai_will_do = {
@@ -576,7 +635,7 @@ USA_american_civil_war_descision = {
 			}
 		}
 
-		cost = 100
+		cost = 75
 
 		days_re_enable = 5
 
@@ -588,7 +647,7 @@ USA_american_civil_war_descision = {
 		}
 
 		ai_will_do = {
-			factor = 100
+			factor = 100000
 			modifier = {
 				factor = 0
 				OR = {
@@ -613,12 +672,10 @@ USA_american_civil_war_descision = {
 				AND = {
 					tag = CSA
 					has_war_with = USA
-					controls_state = 371
 				}
 				AND = {
 					tag = USA
 					has_war_with = CSA
-					controls_state = 954
 				}
 			}
 			date < 1865.1.1
@@ -644,7 +701,102 @@ USA_american_civil_war_descision = {
 
 		complete_effect = {
 			add_war_support = -0.1
-			add_manpower = 50000
+			add_manpower = 40000
+			if = {
+				limit = {
+					tag = USA
+				}
+				random_owned_controlled_state = {
+		            limit = {
+		                is_fully_controlled_by = ROOT
+		            	is_core_of = ROOT
+		            }
+		            create_unit = { 
+		                division = "name = \"Union Regimental\" division_template = \"Union Regimental\" start_experience_factor = 0.0" owner = ROOT
+		            }
+		        }
+		        random_owned_controlled_state = {
+		            limit = {
+		                is_fully_controlled_by = ROOT
+		            	is_core_of = ROOT
+		            }
+		            create_unit = { 
+		                division = "name = \"Union Regimental\" division_template = \"Union Regimental\" start_experience_factor = 0.0" owner = ROOT
+		            }
+		        }
+		        random_owned_controlled_state = {
+		            limit = {
+		                is_fully_controlled_by = ROOT
+		            	is_core_of = ROOT
+		            }
+		            create_unit = { 
+		                division = "name = \"Union Regimental\" division_template = \"Union Regimental\" start_experience_factor = 0.0" owner = ROOT
+		            }
+		        }
+		        random_owned_controlled_state = {
+		            limit = {
+		                is_fully_controlled_by = ROOT
+		            	is_core_of = ROOT
+		            }
+		            create_unit = { 
+		                division = "name = \"Union Regimental\" division_template = \"Union Regimental\" start_experience_factor = 0.0" owner = ROOT
+		            }
+		        }
+		        random_owned_controlled_state = {
+		            limit = {
+		                is_fully_controlled_by = ROOT
+		            	is_core_of = ROOT
+		            }
+		            create_unit = { 
+		                division = "name = \"Union Regimental\" division_template = \"Union Regimental\" start_experience_factor = 0.0" owner = ROOT
+		            }
+		        }
+			}
+	        if = {
+	            limit = {
+	            	tag = CSA
+	            }
+	            random_owned_controlled_state = {
+		            limit = {
+		                is_fully_controlled_by = ROOT
+		            }
+	            	create_unit = { 
+		                division = "name = \"Confederate Regimental\" division_template = \"Confederate Regimental\" start_experience_factor = 0.0" owner = ROOT
+		            }
+		        }
+		        random_owned_controlled_state = {
+		            limit = {
+		                is_fully_controlled_by = ROOT
+		            }
+	            	create_unit = { 
+		                division = "name = \"Confederate Regimental\" division_template = \"Confederate Regimental\" start_experience_factor = 0.0" owner = ROOT
+		            }
+		        }
+		        random_owned_controlled_state = {
+		            limit = {
+		                is_fully_controlled_by = ROOT
+		            }
+	            	create_unit = { 
+		                division = "name = \"Confederate Regimental\" division_template = \"Confederate Regimental\" start_experience_factor = 0.0" owner = ROOT
+		            }
+		        }
+		        random_owned_controlled_state = {
+		            limit = {
+		                is_fully_controlled_by = ROOT
+		            }
+	            	create_unit = { 
+		                division = "name = \"Confederate Regimental\" division_template = \"Confederate Regimental\" start_experience_factor = 0.0" owner = ROOT
+		            }
+		        }
+		        random_owned_controlled_state = {
+		            limit = {
+		                is_fully_controlled_by = ROOT
+		            }
+	            	create_unit = { 
+		                division = "name = \"Confederate Regimental\" division_template = \"Confederate Regimental\" start_experience_factor = 0.0" owner = ROOT
+		            }
+		        }
+	        }
 		}
 
 		ai_will_do = {
@@ -660,6 +812,12 @@ USA_american_civil_war_descision = {
 			modifier = {
 				factor = 0
 				num_divisions > 79
+				tag = CSA
+			}
+			modifier = {
+				factor = 0
+				num_divisions > 99
+				tag = USA
 			}
 			modifier = {
 				add = 100

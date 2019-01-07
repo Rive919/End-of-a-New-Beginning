@@ -1,8 +1,8 @@
 state=
 {
 	id=530
-	name="STATE_530" # Shikoku
-	manpower = 981079
+	name="STATE_530" # Iyo
+	manpower = 753956
 	state_category = large_town
 	history=
 	{
@@ -17,6 +17,6 @@ state=
 		
 	}
 	provinces={
-		4094 4179 7046 9965 
+	   4179 7046 
 	}
 }

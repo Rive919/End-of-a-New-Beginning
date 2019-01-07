@@ -645,29 +645,6 @@ country_event = { # Henri Mouhot's death
   }
 }
 
-country_event = { # Pierre Bosquet's death
-  id = nap_france.103
-  title = nap_france.103.t
-  desc = nap_france.103.d
-  picture = GFX_report_event_pierre_boquet
-
-  fire_only_once = yes
-
-  trigger = {
-    date > 1861.1.1
-    tag = FRA
-  }
-
-  mean_time_to_happen = {
-    days = 150
-  }
-
-  option = { # A great hero indeed
-    name = nap_france.103.a
-    remove_unit_leader = 178901
-  }
-}
-
 country_event = { # Manifeste des Soixante
   id = nap_france.104
   title = nap_france.104.t
@@ -1866,53 +1843,6 @@ country_event = { # The integration of Southern Algeria into our colony
     ALG = {
       transfer_state = 513
     }
-  }
-}
-
-country_event = { # Félix Charles Douay become general
-  id = nap_france.160
-  title = nap_france.160.t
-  desc = nap_france.160.d
-  picture = GFX_france_kepi_general
-
-  trigger = {
-    tag = FRA
-	has_war = yes
-  }
-
-  fire_only_once = yes
-
-  mean_time_to_happen = {
-    days = 500
-	modifier = {
-		factor = 0.3
-		has_war_with = AUS
-	}
-  }
-
-  option = {
-    name = nap_france.160.a
-	ai_chance = { factor = 100 }
-	# https://fr.wikipedia.org/wiki/F%C3%A9lix_Charles_Douay
-	create_corps_commander = {
-		name = "Félix Charles Douay"
-		picture = "Portrait_FRA_Felix_Charles_Douay.dds"
-		id = 178920
-		traits = {
-			trait_reckless
-		}
-		skill = 1
-		attack_skill = 1
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-	}
-	add_command_power = -20 
-  }
-
-  option = {
-    name = nap_france.160.b
-	ai_chance = { factor = 0 }
   }
 }
 
@@ -3793,12 +3723,6 @@ country_event = { # Orsini Affair
       picture = "Portrait_FRA_Eugenie_de_Montijo.dds"
       ideology = despotism
     }
-    ENG = {
-      country_event = {
-        id = vbritain.3
-        days = 1
-      }
-    }
     add_political_power = -100
     set_country_flag = fra_orsini_success
     add_ideas = FRA_idea_orsini_regency_empress
@@ -3811,12 +3735,6 @@ country_event = { # Orsini Affair
     name = nap_france.398.b
     ai_chance = { factor = 80 }
     add_stability = -0.05
-    ENG = {
-      country_event = {
-        id = vbritain.3
-        days = 1
-      }
-    }
     set_country_flag = fra_orsini_failure
     hidden_effect = { 
       news_event = { id = nap_france_flavor.21 } 
@@ -3826,12 +3744,6 @@ country_event = { # Orsini Affair
     name = nap_france.398.c
     ai_chance = { factor = 15 }
     add_stability = -0.15
-    ENG = {
-      country_event = {
-        id = vbritain.3
-        days = 1
-      }
-    }
     create_country_leader = {
       name = "Regency Council"
       picture = "Portrait_FRA_Regency_Council.dds"

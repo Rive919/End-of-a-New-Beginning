@@ -92,7 +92,7 @@
  FRA_niel_plan:0 "The Niel Plan"
  FRA_niel_plan_desc:0 "The Niel Plan was proposed by field marshall Adolphe Niel, his proposal was to modernize our armies. Our officiers are very inefficient, and our tactics dated. In case of an attack, we are ill-prepared, enacting this plan will give our nation some breathing space."
  FRA_modern_war_logistics:0 "Modern War Logistics"
- FRA_modern_war_logistics_desc:0 "Even if we have one of the most advanced military equiments, we still lack innovation in our logistics, stuck in the Napoleonic Wars, and in regulations too strictely followed among our generals and commanders."
+ FRA_modern_war_logistics_desc:0 "Even if we have one of the most advanced military equipments, we still lack innovation in our logistics, stuck in the Napoleonic Wars, and in regulations too strictely followed among our generals and commanders."
  FRA_loi_niel:0 "Enact the Loi Niel"
  FRA_economics_second_empire:0 "The Economics of the Empire"
  FRA_new_public_works:0 "New Public Works"
@@ -329,6 +329,7 @@
 #          NATIONAL SPIRITS AND ADVISORS
 ##################################################
 
+ # National spirits
  FRA_idea_authoritarian_empire:0 "The Authoritarian Empire"
  FRA_idea_authoritarian_empire_desc:0 "Politics of the Second Empire is marked by an authoritarian regime caracterized by the complete control of both the social life and the political spheres."
  FRA_idea_republican_spirit:0 "Republican Spirit"
@@ -373,6 +374,7 @@
  FRA_idea_jerome_mercantile_reforms_2:0 "Jérôme-Napoléon's Mercantile Reforms"
  FRA_idea_jerome_mercantile_reforms_3:0 "Jérôme-Napoléon's Mercantile Reforms"
  FRA_idea_assemblee_generale:0 "Assemblée Générale"
+ FRA_idea_national_funeral:0 "National funerals"
 
  FRA_ALG_french_colonial_rule:0 "French Colonial Rule"
  FRA_ALG_assimilation_colonial_model:0 "The Assimilation Colonial Model"
@@ -389,6 +391,10 @@
  FRA_CBI_idea_french_industries:0 "French Industries"
  FRA_CBI_idea_recognized_prime_minister:0 "Recognized Prime Minister"
 
+ # Leaders
+ POLITICS_NAPOLEON_III_DESC:0 "Charles-Louis-Napoleon Bonaparte, also called Louis-Napoleon Bonaparte, is a nephew of the Emperor Napoleon the First as the 3rd son of Louis-Napoleon Bonaparte, called Louis Bonaparte, the King of Holland. Napoleon the First considered him as a grand-son as a son of Hortense de Beauharnais the daughter of Josephine. In 1816, all the Bonaparte are banned from France, Charles-Louis-Napoleon Bonaparte is exiled in Arenenberg (Switzerland) with his mother. In 1832 he get the Swiss nationality. 1832 is also the year of the death of the son of Napoleon the First. Charles-Louis-Napoleon Bonaparte became the leader of the Bonaparte dynasty like his brothers are also dead. He attempted several uprising, Strasbourg (1836) and Boulogne-sur-Mer (1840). The 1848 Revolution allowed him to run for deputation. He became the first universal elected president in 1848. In December 1851 he organized a coup d’état and in December 1852 he became the Emperor Napoleon III. Napoleon III is married in 1853 with Eugénie de Montijo and has got a son in March 1856 who is the godchild of the Pope Pie IX."
+
+ # Political adivors
  FRA_advisor_victor_hugo:0 "Victor Hugo"
  FRA_advisor_emile_zola:0 "Emile Zola"
  FRA_advisor_baron_haussmann:0 "Baron Haussmann"
@@ -399,6 +405,35 @@
  FRA_advisor_michel_chevalier:0 "Michel Chevalier"
  FRA_advisor_adolphe_thiers:0 "Adolphe Thiers"
  FRA_advisor_leon_gambetta:0 "Léon Gambetta"
+ 
+ # Military staff
+ francois_achille_bazaine:0 "François Achille Bazaine"
+ patrice_de_mac_mahon:0 "Patrice de Mac-Mahon"
+ charles_auguste_frossard:0 "Charles Auguste Frossard"
+ adolphe_niel:0 "Adolphe Niel"
+ edmond_le_boeuf:0 "Edmond Le Bœuf"
+ francois_thomas_trehouart:0 "François Thomas Tréhouart"
+ leonard_victor_charner:0 "Léonard Victor Charner"
+ ferdinand_hamelin:0 "Ferdinand Hamelin"
+ auguste_regnaud_de_saint_jean_d_angely:0 "Auguste Regnaud de Saint-Jean d'Angély"
+ louis_joseph_lebrun:0 "Louis Joseph Lebrun"
+ abel_douay:0 "Abel Douay"
+ charles_rigault_de_genouilly:0 "Charles Rigault de Genouilly"
+ joseph_romain_desfosses:0 "Joseph Romain-Desfossés"
+ alexandre_ferdinand_parseval_deschenes:0 "Alexandre Ferdinand Parseval-Deschênes"
+ elie_frederic_forey:0 "Élie Frédéric Forey"
+ felix_charles_douay:0 "Félix Charles Douay"
+ paul_de_ladmirault:0 "Paul de Ladmirault"
+ charles_denis_bourbaki:0 "Charles-Denis Bourbaki"
+ charles_cousin_montauban:0 "Charles Cousin-Montauban"
+
+ # Designers and theorists
+ FRA_AMX:0 "AMX"
+ denain:0 "Société des hauts fourneaux et des forges de Denain et d'Anzin"
+ saint_gobain:0 "Saint-Gobain"
+ gramme:0 "Ateliers Gramme"
+ jean_baptiste_philibert_vaillant:0 "Jean-Baptiste Philibert Vaillant"
+ gaud_amable_hugon:0 "Gaud-Amable Hugon"
 
 ##################################################
 #               EVENT TEXTS
@@ -599,10 +634,6 @@
  nap_france.102.t:0 "Henri Mouhot's death"
  nap_france.102.d:0 "Henri Mouhot, contaminated by the yellow fever, has died at the age of 35. He was an explorator, he was one of the first european to venture inside the siamese jungle. After having wrote two books on the kingdom of Siam, he decided in 1857 to explore Laos, and Cambodia, where he became a great frind of the local king, [CAM.GetLeader]. He rediscovered Ankgor Wat, and showed its beauty to the rest of the world. Sadly, his trip from Bangkok to Luang Prabang will be his last. He will be remembered as one of the greatest french explorer of our time."
  nap_france.102.a:0 "We mourn the death of a great adventurer"
-
- nap_france.103.t:0 "Pierre Joseph François Bosquet's death"
- nap_france.103.d:0 ""
- nap_france.103.a:0 "A great hero indeed"
 
  nap_france.104.t:0 "Le Manifeste des Soixante"
  nap_france.104.d:0 ""
@@ -816,11 +847,6 @@
  nap_france.153.t:0 "The integration of Southern Algeria into our colony"
  nap_france.153.d:0 ""
  nap_france.153.a:0 "As it should be"
-
- nap_france.160.t:0 "Félix Charles Douay becomes general"
- nap_france.160.d:0 "Félix Charles Douay, the brother of the general Abel Douay, has shown that he is a brave in the recent battles. He could be a good general."
- nap_france.160.a:0 "He is appointed general !"
- nap_france.160.b:0 "We have enough generals"
 
  nap_france.200.t:0 "The Regency of Jérôme Bonaparte"
  nap_france.200.d:0 ""
@@ -1382,6 +1408,51 @@
  carbonari_italy.29.t:0 "France demands Savoy"
  carbonari_italy.29.d:0 ""
  carbonari_italy.29.a:0 "As agreed upon"
+ 
+ army_france.1.t:0 "Pierre Joseph François Bosquet's retirement"
+ army_france.1.d:0 "Pierre Joseph François Bosquet's health is poor after his injury in the Crimean War.\nHe may still be able to serve in the army for a while, but perhaps he should retire to enjoy the last moments of his life."
+ army_france.1.a:0 "He has earned his retirement"
+ army_france.1.b:0 "We need him a little more"
+ 
+ army_france.2.t:0 "Pierre Joseph François Bosquet's death"
+ army_france.2.d:0 "Pierre Joseph François Bosquet has served the nation until the death despite his poor health."
+ army_france.2.a:0 "We will miss him"
+ army_france.2.b:0 "Let's have a national funeral"
+
+ army_france.1001.t:0 "Félix Charles Douay becomes general ?"
+ army_france.1001.d:0 "Félix Charles Douay, the brother of the general Abel Douay, has shown that he is a brave in the recent battles. He could be a good general."
+ army_france.1001.a:0 "He is appointed general !"
+ army_france.1001.b:0 "We have enough generals"
+
+ army_france.1002.t:0 "Louis Jules Trochu becomes general ?"
+ army_france.1002.d:0 "Louis Jules Trochu has got the Légion d'Honneur in the Crimean War. He served the army with dignity and so could be a good general."
+ army_france.1002.a:0 "He is appointed general !"
+ army_france.1002.b:0 "We have enough generals"
+
+ army_france.1003.t:0 "François Louis Alfred Durrieu becomes general ?"
+ army_france.1003.d:0 "François Louis Alfred Durrieu, the nephew of the general Antoine Simon Durrieu, has shown in Algeria that he could be a good general."
+ army_france.1003.a:0 "He is appointed general !"
+ army_france.1003.b:0 "We have enough generals"
+
+ army_france.1004.t:0 "Pierre Charles Dejean becomes general ?"
+ army_france.1004.d:0 "Pierre Charles Dejean, the son of the general Pierre François Marie Auguste Dejean, has shown in the fortification committee that he could be a good general."
+ army_france.1004.a:0 "He is appointed general !"
+ army_france.1004.b:0 "We have enough generals"
+
+ army_france.1005.t:0 "Camille Clément de La Roncière-Le Noury becomes amiral ?"
+ army_france.1005.d:0 "Camille Clément de La Roncière-Le Noury, the son of the general de la Roncière, a war hero in Napoleon's war, has shown in Mexico that he could be a good amiral."
+ army_france.1005.a:0 "He is appointed amiral !"
+ army_france.1005.b:0 "We have enough amirals"
+
+ army_france.1006.t:0 "Charles de Lorencez becomes general ?"
+ army_france.1006.d:0 "Charles de Lorencez has been appointed major general in 1855 after the Battle of Malakoff during the Crimean War. He could be a good general to be sent in Mexico."
+ army_france.1006.a:0 "He is appointed general !"
+ army_france.1006.b:0 "We have enough generals"
+
+ army_france.1007.t:0 "Charles Joseph François Wolff becomes general ?"
+ army_france.1007.d:0 "Charles Joseph François Wolff has served in Algeria since 1843 and has come back in metropole for European wars. He could be a good general."
+ army_france.1007.a:0 "He is appointed general !"
+ army_france.1007.b:0 "We have enough generals"
 
  # Tooltips
 

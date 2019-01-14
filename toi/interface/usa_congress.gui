@@ -214,10 +214,14 @@ guiTypes = {
 			format = center
 		}
 
-		listboxType = {
-			name = "usa_congress_senate_seat_list"
-			position = { x = 0 y = 0 }
-            horizontal = 1
+		instantTextboxType = {
+			name = "usa_congress_senate_max_seats"
+			position = { x=50 y=75 }
+			font = "hoi_18mbs"
+			text = "Total Seats in the Senate: [?usa_congress_senate_total_seats]"
+			maxWidth = 1000
+			maxHeight = 1000
+			format = center
 		}
 
 		buttonType = {
@@ -251,6 +255,16 @@ guiTypes = {
 			text = "UNITED_STATES_HOUSE"
 			maxWidth = 1000
 			maxHeight = 100
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "usa_congress_senate_max_seats"
+			position = { x=50 y=75 }
+			font = "hoi_18mbs"
+			text = "Total Seats in the House: [?usa_congress_house_total_seats]"
+			maxWidth = 1000
+			maxHeight = 1000
 			format = center
 		}
 
@@ -319,6 +333,16 @@ guiTypes = {
 			text = "UNITED_STATES_JUDICIAL"
 			maxWidth = 1000
 			maxHeight = 100
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "usa_congress_senate_max_seats"
+			position = { x=50 y=75 }
+			font = "hoi_18mbs"
+			text = "Total Seats in the Supreme Court: [?usa_congress_court_total_seats]"
+			maxWidth = 1000
+			maxHeight = 1000
 			format = center
 		}
 

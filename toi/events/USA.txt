@@ -3976,24 +3976,12 @@ country_event = {
 		desc = usa.65.d
 		picture = GFX_report_event_german_reichstag_gathering
 		
-		trigger = {
-			tag = USA
-			has_country_flag = USA_UtahWar_Escalated
-			OR = {
-				NOT = { country_exists = UTA }
-				UTA = { is_puppet_of = USA }
-			}
-		}
+		is_triggered_only = yes
 
 		fire_only_once = yes
-
-		mean_time_to_happen = {
-			days = 2
-		}
 		
 		option = {
 			name = usa.65.a
-			remove_ideas = USA_UtahWar_2
 			swap_ideas = {
 				remove_idea = state_religion
 				add_idea = secular_state
@@ -4008,10 +3996,10 @@ country_event = {
 			}
 			hidden_effect = { news_event = { id = utah_news.3 } }
 			clr_country_flag = USA_UtahWar_Escalated
+			remove_ideas = USA_UtahWar_2
 		}
 		option = {
 			name = usa.65.b
-			remove_ideas = USA_UtahWar_2
 			clr_country_flag = USA_UtahWar_Escalated
 			if = {
 				limit = {
@@ -4023,6 +4011,7 @@ country_event = {
 			}
 			hidden_effect = { news_event = { id = utah_news.3 } }
 			add_political_power = -25
+			remove_ideas = USA_UtahWar_2
 		}
 }
 #USA Utah lost
@@ -6921,7 +6910,7 @@ country_event = {
 				}
 			}
 			set_politics = {
-				ruling_party = collective_socialism
+				ruling_party = collectivist_socialism
 				elections_allowed = yes
 				election_frequency = 48
 			}

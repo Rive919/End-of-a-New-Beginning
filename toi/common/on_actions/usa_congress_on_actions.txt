@@ -10,8 +10,9 @@ on_actions = {
                 set_variable = { usa_congress_rate = 1 }
                 set_variable = { usa_congress_max = 100 }
 
-                set_variable = { usa_congress_faction = 50 }
-                set_variable = { usa_congress_faction_max = 100 }
+                set_variable = { usa_congress_senate_total_seats = 66 }
+                set_variable = { usa_congress_house_total_seats = 237 }
+                set_variable = { usa_congress_court_total_seats = 9 }
             }
 		}
 	}

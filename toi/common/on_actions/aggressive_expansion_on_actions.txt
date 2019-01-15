@@ -7,12 +7,12 @@ on_actions = {
                     has_aggressive_expansion = yes
                 }
                 set_variable = { aggressive_expansion = 0 }
-                set_variable = { aggressive_expansion_decay_rate = 2 }
-                set_variable = { aggressive_expansion_max = 100 }
+                set_variable = { aggressive_expansion_decay_rate = -0.01 }
+
                 clamp_variable = {
                     var = aggressive_expansion
                     min = 0
-                    max = aggressive_expansion_max
+                    max = 100
                 }
             }
 		}
@@ -43,6 +43,7 @@ on_actions = {
                     NOT = {
                         ROOT = { has_idea = pre_industrial_era }
                         FROM = { has_idea = pre_industrial_era }
+                        FROM = { is_subject_of = ROOT }
                     }
                 }
                 ROOT = {
@@ -55,6 +56,9 @@ on_actions = {
             if = {
                 limit = {
                     FROM = { has_idea = pre_industrial_era }
+                    NOT = {
+                        FROM = { is_subject_of = ROOT }
+                    }
                 }
                 ROOT = {
                     add_to_variable = {
@@ -75,6 +79,12 @@ on_actions = {
                         is_claimed_by = ROOT
                         is_core_of = ROOT
                     }
+                    NOT = {
+                        AND = {
+                            civilwar_target = ROOT
+                            civilwar_target = FROM
+                        }
+                    }
                 }
                 ROOT = {
                     add_to_variable = {
@@ -87,6 +97,12 @@ on_actions = {
                 limit = {
                     has_claimed_state_in_peace_conference = ROOT
                     is_claimed_by = ROOT
+                    NOT = {
+                        AND = {
+                            civilwar_target = ROOT
+                            civilwar_target = FROM
+                        }
+                    }
                 }
                 ROOT = {
                     add_to_variable = {
@@ -111,10 +127,20 @@ on_actions = {
 
     on_capitulation = {
         effect = {
-            FROM = {
-                subtract_from_variable = {
-                    var = aggressive_expansion
-                    value = 10
+            if = {
+                limit = {
+                    NOT = {
+                        AND = {
+                            civilwar_target = ROOT
+                            civilwar_target = FROM
+                        }
+                    }
+                }
+                FROM = {
+                    subtract_from_variable = {
+                        var = aggressive_expansion
+                        value = 10
+                    }
                 }
             }
         }
@@ -142,20 +168,23 @@ on_actions = {
         }
     }
     
-    on_yearly_pulse = {
+    on_daily = {
 		effect = {
             if = {
 				limit = { 
                     has_aggressive_expansion = yes
+                    has_offensive_war = no
+                    has_civil_war = no
                 }
                 
                 ROOT = {
-                    subtract_from_variable = { aggressive_expansion = aggressive_expansion_decay_rate }
+                    add_to_variable = { aggressive_expansion = aggressive_expansion_decay_rate }
                 }
+
                 clamp_variable = {
                     var = aggressive_expansion
                     min = 0
-                    max = aggressive_expansion_max
+                    max = 100
                 }
 			}
         }

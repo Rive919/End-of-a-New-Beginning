@@ -352,6 +352,9 @@
  BRA_empire_constitutional_social_egalitarianism:0 "Kingdom of Brazil"
  BRA_empire_constitutional_social_egalitarianism_ADJ:0 "Brazilian"
  BRA_empire_constitutional_social_egalitarianism_def:0 "The Kingdom of Brazil"
+ BRA_empire_constitutional_centrism:0 "Kingdom of Brazil"
+ BRA_empire_constitutional_centrism_ADJ:0 "Brazilian"
+ BRA_empire_constitutional_centrism_def:0 "The Kingdom of Brazil"
 
  ARG_confederation_cosmetic_traditional_conservatism:0 "Argentine Confederation"
  ARG_confederation_cosmetic_traditional_conservatism_DEF:0 "Argentine Confederation"
@@ -725,3 +728,13 @@
  JAP_shogunate_autocracy:0 "Tokugawa Shogunate"
  JAP_shogunate_autocracy_ADJ:0 "Tokugawa Shogunate"
  JAP_shogunate_autocracy_DEF:0 "the Tokugawa Shogunate"
+
+ PAP_RRP_radical_democracy:0 "Roman Republic"
+ PAP_RRP_radical_democracy_ADJ:0 "Roman"
+ PAP_RRP_radical_democracy_DEF:0 "the Roman Republic"
+ RRP_radical_democracy:0 "Roman Republic"
+ RRP_radical_democracy_ADJ:0 "Roman"
+ RRP_radical_democracy_DEF:0 "the Roman Republic"
+ RRP:0 "Roman Republic"
+ RRP_ADJ:0 "Roman"
+ RRP_DEF:0 "the Roman Republic"

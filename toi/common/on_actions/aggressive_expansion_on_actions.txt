@@ -44,6 +44,23 @@ on_actions = {
                         ROOT = { has_idea = pre_industrial_era }
                         FROM = { has_idea = pre_industrial_era }
                         FROM = { is_subject_of = ROOT }
+                        FROM = { is_puppet_of = ROOT }
+                    }
+                    NOT = {
+                        AND = {
+                            ROOT = { tag = PIE }
+                            date > 1862.1.1
+                            FROM = {
+                                OR = {
+                                    tag = MOD
+                                    tag = TUS
+                                    tag = PAP
+                                    tag = NSC
+                                    tag = LVN
+                                    tag = PRM
+                                }
+                            }
+                        }
                     }
                 }
                 ROOT = {
@@ -58,6 +75,23 @@ on_actions = {
                     FROM = { has_idea = pre_industrial_era }
                     NOT = {
                         FROM = { is_subject_of = ROOT }
+                        FROM = { is_puppet_of = ROOT }
+                    }
+                    NOT = {
+                        AND = {
+                            ROOT = { tag = PIE }
+                            date > 1862.1.1
+                            FROM = {
+                                OR = {
+                                    tag = MOD
+                                    tag = TUS
+                                    tag = PAP
+                                    tag = NSC
+                                    tag = LVN
+                                    tag = PRM
+                                }
+                            }
+                        }
                     }
                 }
                 ROOT = {
@@ -70,8 +104,37 @@ on_actions = {
         }
     }
 
-    on_peaceconference_ended = {
+    on_civil_war_end = {
         effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        ROOT = { has_idea = pre_industrial_era }
+                        FROM = { has_idea = pre_industrial_era }
+                        FROM = { is_subject_of = ROOT }
+                    }
+                }
+                ROOT = {
+                    subtract_from_variable = {
+                        var = aggressive_expansion
+                        value = 5
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    FROM = { has_idea = pre_industrial_era }
+                    NOT = {
+                        FROM = { is_subject_of = ROOT }
+                    }
+                }
+                ROOT = {
+                    subtract_from_variable = {
+                        var = aggressive_expansion
+                        value = 2
+                    }
+                }
+            }
             every_state = {
                 limit = {
                     has_claimed_state_in_peace_conference = ROOT
@@ -79,11 +142,40 @@ on_actions = {
                         is_claimed_by = ROOT
                         is_core_of = ROOT
                     }
+                }
+                ROOT = {
+                    subtract_from_variable = {
+                        var = aggressive_expansion
+                        value = 3
+                    }
+                }
+            }
+            every_state = {
+                limit = {
+                    has_claimed_state_in_peace_conference = ROOT
+                    is_claimed_by = ROOT
+                }
+                ROOT = {
+                    subtract_from_variable = {
+                        var = aggressive_expansion
+                        value = 1
+                    }
+                }
+            }
+        }
+    }
+
+    on_peaceconference_ended = {
+        effect = {
+            every_state = {
+                limit = {
+                    ROOT = {
+                        has_civil_war = no
+                    }
+                    has_claimed_state_in_peace_conference = ROOT
                     NOT = {
-                        AND = {
-                            civilwar_target = ROOT
-                            civilwar_target = FROM
-                        }
+                        is_claimed_by = ROOT
+                        is_core_of = ROOT
                     }
                 }
                 ROOT = {
@@ -95,14 +187,11 @@ on_actions = {
             }
             every_state = {
                 limit = {
+                    ROOT = {
+                        has_civil_war = no
+                    }
                     has_claimed_state_in_peace_conference = ROOT
                     is_claimed_by = ROOT
-                    NOT = {
-                        AND = {
-                            civilwar_target = ROOT
-                            civilwar_target = FROM
-                        }
-                    }
                 }
                 ROOT = {
                     add_to_variable = {

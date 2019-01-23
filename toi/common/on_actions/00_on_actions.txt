@@ -147,6 +147,14 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					ROOT = { has_tag = PRU }
+					FROM = { has_tag = PRR }
+					ROOT = { is_ai = yes }
+				}
+				annex_country = { target = FROM }
+			}
+			if = {
+				limit = {
 					tag = USA
 					has_country_flag = USA_UtahWar_Escalated
 					FROM = { tag = UTA }
